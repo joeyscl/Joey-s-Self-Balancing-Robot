@@ -58,7 +58,8 @@ void setup() {
   digitalWrite(MOTOR_A_BRAKE_PIN, LOW);
   digitalWrite(MOTOR_B_BRAKE_PIN, LOW);
   
-  //Calculate Kp Ki Kd from analog input (adjustable with POT)
+//***THIS SECION IS FOR WHEN ROBOT IS SETUP WITH POTENTIOMETERS FOR ADJUSTING PID PARAMS***
+// Calculate Kp Ki Kd from analog input (adjustable with POT)
   //Calc Kp
 //  float Kp_POT_factor;
 //  Kp_POT_factor = analogRead(Kp_Pin);
@@ -73,8 +74,7 @@ void setup() {
 //  float Kd_POT_factor;
 //  Kd_POT_factor = analogRead(Kd_Pin);
 //  Kd_POT_factor /= 675; //675 instead of 1023 because I'm using 3.3V (instead of 5V) as Vin on the POT
-//  Kd = Kd_POT_factor * 10;
-  
+//  Kd = Kd_POT_factor * 10;  
   
   
   Serial.println("Kp: ");
